@@ -15,14 +15,6 @@ An interactive, browser-based 3D Rubik's Cube solver that not only finds the sol
 * **🤖 AI-Powered Explanations:** After a solution is found, click "Explain Solution" to send the algorithm to the Gemini API. It returns a high-level, easy-to-understand breakdown of the solving phases (White Cross, F2L, OLL, PLL).
 * **Responsive Design:** A clean, modern UI that works seamlessly on both desktop and mobile devices.
 
----
-
-### 🚀 Live Demo
-
-**[Click here to try the solver live!](https://your-live-demo-link-here.com)** *(Note: This is a placeholder link. You would replace this with the actual URL where you host the application.)*
-
----
-
 ### 🛠️ Tech Stack
 
 This project is built entirely with frontend technologies, running in the browser.
@@ -38,33 +30,6 @@ This project is built entirely with frontend technologies, running in the browse
 * **AI Integration:**
     * **Google Gemini API:** Used for the "Suggest Pattern" and "Explain Solution" features. The application makes direct `fetch` calls to the Gemini REST API.
 
----
-
-### ⚙️ How It Works
-
-1.  **3D Visualization:** The cube is not a single object but a collection of 26 individual "cubies" arranged in a 3x3x3 grid. When a move is performed (e.g., `R`), the application identifies all cubies on the right face, attaches them to a central `pivot` object, rotates the pivot 90 degrees, and then reattaches the cubies to the main scene in their new positions.
-2.  **Solving Algorithm:** The application uses a built-in, programmatic Layer-by-Layer (LBL) solver. When "Solve" is clicked, it analyzes the cube's abstract state and generates a valid sequence of moves to solve it phase by phase.
-3.  **Gemini API Integration:**
-    * **Pattern Suggestion:** A carefully crafted prompt is sent to the Gemini API asking for a creative name and a valid 20-move scramble, with instructions to return the data in a specific JSON format.
-    * **Solution Explanation:** The generated solution string is sent to the Gemini API. The prompt asks the AI to act as a helpful tutor and explain the sequence by breaking it down into logical solving phases.
-
----
-
-### 🏁 Getting Started
-
-This project is a single, self-contained HTML file and requires no build process or installation.
-
-1.  **Clone the repository (or download the HTML file):**
-    ```bash
-    git clone [https://github.com/your-username/rubiks-solver.git](https://github.com/your-username/rubiks-solver.git)
-    ```
-2.  **Navigate to the directory:**
-    ```bash
-    cd rubiks-solver
-    ```
-3.  **Open the `.html` file in your web browser.** That's it!
-
-**Note:** To enable the Gemini API features, you would need to get a free API key from [Google AI Studio](https://aistudio.google.com/) and paste it into the `API_KEY` constant in the `<script>` tag.
 
 ---
 
