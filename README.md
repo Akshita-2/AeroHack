@@ -1,11 +1,5 @@
 # 🤖 AI-Powered 3D Rubik's Cube Solver
 
-![Rubik's Cube Solver Demo](https://storage.googleapis.com/gemini-prod/images/c29c8e8d-876e-4e9b-8919-866465492d05)
-
-An interactive, browser-based 3D Rubik's Cube solver that not only finds the solution to any valid scramble but also uses the **Google Gemini API** to provide creative scramble patterns and explain the solution steps in plain English.
-
----
-
 ### ✨ Features
 
 * **Interactive 3D Cube:** A fully interactive 3D model built with **Three.js**. Drag to rotate, zoom, and inspect the cube from any angle.
